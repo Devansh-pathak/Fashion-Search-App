@@ -1,19 +1,40 @@
 .home-page {
-    .home-header {
-      text-align: center;
-      padding: 20px;
-      background-color: #f8f9fa;
-  
-      h1 {
-        margin-bottom: 20px;
+  position: relative;
+  height: 100vh;
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start; // Align content to the top
+  text-align: center;
+
+  .home-header {
+    width: 100%;
+    padding: 2rem 0; // Add padding to the top and bottom
+    margin-top: 0; // Ensure there's no margin pushing it down
+
+    .hero-title {
+      color: white; // Change the color to white
+      font-size: 4rem;
+      font-weight: bold;
+      text-transform: uppercase;
+      margin: 0 auto;
+      opacity: 0; // Set initial opacity to 0 for fade-in effect
+
+      // Keyframes for fade-in animation
+      @keyframes fadeIn {
+        from {
+          opacity: 0;
+        }
+        to {
+          opacity: 1;
+        }
       }
-    }
-  
-    .trending {
-      padding: 20px;
-  
-      h2 {
-        margin-bottom: 20px;
-      }
+
+      // Apply the fade-in animation
+      animation: fadeIn 2s ease forwards; // Adjust duration as needed
     }
   }
+
+  // ... styles for other elements
+}
