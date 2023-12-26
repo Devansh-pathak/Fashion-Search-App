@@ -1,30 +1,15 @@
 .product-card {
-    width: 200px; // or width as per your design
-    border: 1px solid #ccc;
-    border-radius: 8px;
-    overflow: hidden;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-    transition: box-shadow 0.3s ease;
-  
-    &:hover {
-      box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
-    }
-  
-    img {
-      width: 100%;
-      height: auto;
-    }
-  
-    .product-info {
-      padding: 10px;
-      h3 {
-        margin-top: 0;
-        font-size: 1.1em;
-      }
-      p {
-        margin: 5px 0;
-        color: #666;
-      }
-    }
+  /* Existing styles... */
+
+  .wishlist-button {
+    background: none;
+    border: none;
+    cursor: pointer;
+    font-size: 1.5rem; /* Adjust size as needed */
+    color: black; /* Default color */
   }
-  
+
+  .wishlist-button.wishlisted {
+    color: red; /* Color when wishlisted */
+  }
+}
